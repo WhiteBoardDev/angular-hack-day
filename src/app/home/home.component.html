@@ -1,0 +1,14 @@
+<h1>
+  {{title}}
+</h1>
+
+This project was created in couple hours during the angular hack day on 1/28.
+
+<h3>Goals</h3>
+
+<ul>
+  <li *ngFor="let goal of goalService.getGoals(); let index = index">
+    <div *ngIf="goal.completed">DONE {{goal.description}}</div>
+    <div *ngIf="!goal.completed">{{goal.description}}</div> 
+  </li>
+</ul>

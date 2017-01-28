@@ -1,0 +1,16 @@
+<div>
+  <h3>This is a data binding test</h3>
+
+  <br/>
+  <input type="number" [(ngModel)]="firstNumber" /> + <br/>
+  <input type="number" [(ngModel)]="secondNumber" /> * <br/>
+  Controller Number: {{controllerNumber}} = <br/>
+  {{firstNumber + secondNumber * controllerNumber}}
+</div>
+
+<div style="margin-top:50px">
+  <h3>What is the number in the controller?</h3>
+  Current number is: {{ controllerNumber }}
+</div>
+
+<button (click)="incrementControllerNumber()" >incrementControllerNumber </button>

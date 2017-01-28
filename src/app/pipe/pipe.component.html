@@ -1,0 +1,12 @@
+
+<h3>To upper case fun</h3>
+<div>
+Put in some lower case crap here :<input [(ngModel)]="lowercase" /><br/>
+Upper case version: {{lowercase | uppercase }}
+</div>
+
+
+<h3>What percent is that?</h3>
+Decimal number where 1 = 100% <input [(ngModel)]="numerator" type="number" /><br/>
+
+<p>Percent rendering: {{numerator | percent}}</p>
